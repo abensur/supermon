@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
     '@ant-design-vue/nuxt',
-    "@nuxt/fonts"
   ],
 
   experimental: {

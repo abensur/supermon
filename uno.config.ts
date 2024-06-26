@@ -4,10 +4,11 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+
+import presetWebFonts from '@unocss/preset-web-fonts'
 
 export default defineConfig({
   shortcuts: [
@@ -22,10 +23,9 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'google',
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        color: ['Honk'],
       },
     }),
   ],
