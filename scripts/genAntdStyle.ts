@@ -22,4 +22,4 @@ export async function genAntdStyleDarkMode() {
   })
   await fsExtra.outputFile('public/css/antd.dark.css', css, 'utf8')
 }
-genAntdStyleDarkMode()
+genAntdStyle()

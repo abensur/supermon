@@ -43,6 +43,13 @@ export default defineNuxtConfig({
     },
   },
 
+  ssr: false,
+  routeRules: {
+    '/': {
+      ssr: false,
+    },
+  },
+
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -62,6 +69,10 @@ export default defineNuxtConfig({
   },
 
   pwa,
+
+  sourcemap: {
+    client: true,
+  },
 
   devtools: {
     enabled: true,

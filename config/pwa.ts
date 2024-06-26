@@ -6,8 +6,9 @@ const scope = '/'
 
 export const pwa: ModuleOptions = {
   registerType: 'autoUpdate',
-  strategies: 'injectManifest',
+  strategies: 'generateSW',
   scope,
+
   base: scope,
   manifest: {
     id: scope,
