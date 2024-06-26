@@ -138,7 +138,7 @@ watch(() => deckStore.deckArr.length, (deckSize) => {
                   @click="removePokemon(deckStore.deckArr[pokemon - 1])"
                 />
               </template>
-              <div v-else class="card mx-auto h-8.8cm w-6.3cm flex flex-row flex-wrap">
+              <div v-else class="card mx-auto mb-4 h-8.8cm w-6.3cm flex flex-row flex-wrap sm-mb-0">
                 <a-button v-if="pokemon - 1 === deckStore.deckArr.length" ma-auto :icon="h(PlusCircleOutlined)" shape="circle" @click="selectEl.focus(); openState = true;" />
               </div>
             </div>
